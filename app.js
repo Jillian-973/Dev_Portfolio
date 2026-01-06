@@ -39,14 +39,14 @@ const projectsData = {
     image: 'img/embleme.jpg',
     title: 'Agence Belmont',
     description: 'Site imaginaire d\'une agence pour problème paranormal inspiré de l\'univers de castlevania pour s\'entrainer au JavaScript',
-    link: '#',
+    link: 'https://jillian-973.github.io/Agence_Belmont/',
     tags: ['HTML', 'CSS', 'JavaScript' ]
   },
     7: {
     image: 'img/meteo.png',
     title: 'Météo France',
     description: 'Site météorologique utilisant une API pour récupérer les données météo en fonction de la ville entrée par l\'utilisateur. Afin de s\'entrainer au JavaScript et à l\'utilisation d\'API.',
-    link: '#',
+    link: 'https://jillian-973.github.io/Meteo_France/',
     tags: ['HTML', 'CSS', 'JavaScript' ]
   }
 };
