@@ -219,13 +219,11 @@ section h2::after {
   transition: transform 0.3s ease;
 }
 
-.competences{
-  h3{
+.cape{
     text-align: center;
     padding-bottom: 3rem;
     margin : 0 10rem;
     color: var(--orange);
-  }
 }
 
 .competence-category:hover {
