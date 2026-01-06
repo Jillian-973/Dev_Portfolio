@@ -219,11 +219,35 @@ section h2::after {
   transition: transform 0.3s ease;
 }
 
-.cape{
-    text-align: center;
-    padding-bottom: 3rem;
-    margin : 0 10rem;
-    color: var(--orange);
+.cape {
+  text-align: center;
+  padding-bottom: 3rem;
+  margin: 0 10rem;
+  color: var(--orange);
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 3rem;
+  margin-left: 41%;
+  
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.btn:hover {
+  background-color: black;
 }
 
 .competence-category:hover {
