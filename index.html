@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Killian Dumoulin - Développeur Web</title>
+    <link rel="stylesheet" href="style.css" />
+      <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon_io/favicon-16x16.png"
+      />
+  </head>
+  <body>
+    <!-- Header fixe -->
+    <header id="header">
+      <nav>
+        <div class="logo"><img src="img/logo.png" alt="" height="50px"></div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="navMenu">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero" id="hero">
+      <h1>Killian Dumoulin</h1>
+      <h2>Développeur Web</h2>
+    </section>
+
+    <!-- Section Profil -->
+    <section class="profil" id="profil">
+      <h2>À propos de moi</h2>
+      <div class="profil-content">
+        <div class="profil-photo">
+          <img
+            src="img/jillian.png"
+            alt="Killian Dumoulin"
+          />
+        </div>
+        <div class="profil-text">
+          <h3>
+            Je transforme vos idées en sites web, un peu comme un magicien… Mais
+            avec du code et sans la cape !
+          </h3>
+          <p>
+            Développeur web passionné, je crée des sites et applications
+            modernes avec des solutions techniques adaptées aux besoins des
+            utilisateurs et entreprises, en plaçant le client au cœur de chaque
+            étape du projet.
+          </p>
+          <p>
+            Aujourd'hui, je mets mon expertise au service de projets ambitieux
+            et je suis toujours prêt à relever de nouveaux défis techniques.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="competences" id="competences">
+      <h2>Mes Compétences</h2>
+      <h3>Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les
+        jours, d’autant plus en étant impliqué, curieux et passionné.</h3>
+      <div class="competences-grid">
+        <!-- Back-end -->
+        <div class="competence-category">
+          <h3>Back-end</h3>
+          <div class="skill">
+            <div class="skill-name">
+              <span>JavaScript</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">
+              <span>C#</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">
+              <span>Node.js</span>
+              <span>50%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="50"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">
+              <span>PHP</span>
+              <span>50%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="50"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Front-end -->
+        <div class="competence-category">
+          <h3>Front-end</h3>
+          <div class="skill">
+            <div class="skill-name">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">
+              <span>JavaScript</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">
+              <span>PHP</span>
+              <span>50%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="50"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CMS -->
+        <div class="competence-category">
+          <h3>CMS</h3>
+          <div class="skill">
+            <div class="skill-name">
+              <span>WordPress</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section class="projets" id="projets">
+      <h2>Mes Projets</h2>
+      <div class="projets-grid">
+        <!-- Projet 1 -->
+        <div class="project-card" data-project="1">
+          <div class="project-image"><img src="img/chronoquest.png" alt=""></div>
+          <div class="project-info">
+            <h3>Chronoquest</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="project-card" data-project="2">
+          <div class="project-image"><img src="img/melon.png" alt=""></div>
+          <div class="project-info">
+            <h3>JetGun</h3>
+            <div class="project-tags">
+              <span class="tag">C#</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="project-card" data-project="3">
+          <div class="project-image"><img src="img/quizz.png" alt=""></div>
+          <div class="project-info">
+            <h3>Jeu Quizz FDD</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="project-card" data-project="4">
+          <div class="project-image"><img src="img/site yoga.png" alt=""></div>
+          <div class="project-info">
+            <h3>Yoga Center</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 5 -->
+        <div class="project-card" data-project="5">
+          <div class="project-image"><img src="img/adopt.png" alt=""></div>
+          <div class="project-info">
+            <h3>Adopte un chien</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 6 -->
+        <div class="project-card" data-project="6">
+          <div class="project-image"><img src="img/embleme.jpg" alt=""></div>
+          <div class="project-info">
+            <h3>Agence Belmont</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+                <!-- Projet 7 -->
+        <div class="project-card" data-project="7">
+          <div class="project-image"><img src="img/meteo.png" alt=""></div>
+          <div class="project-info">
+            <h3>Météo France</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Projet -->
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <div class="modal-image" id="modalImage">🛒</div>
+        <div class="modal-body">
+          <h3 id="modalTitle">Titre du projet</h3>
+          <p id="modalDescription"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+      <h2>Me Contacter</h2>
+      <form action="https://formspree.io/f/xldgbqjp" method="post" class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required />
+          <span class="error" id="nameError">Veuillez entrer votre nom</span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error" id="emailError"
+            >Veuillez entrer un email valide</span
+          >
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <span class="error" id="messageError"
+            >Veuillez entrer un message</span
+          >
+        </div>
+        <button type="submit" class="submit-btn">Envoyer</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Killian Dumoulin - Tous droits réservés</p>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>
