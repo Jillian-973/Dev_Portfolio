@@ -250,6 +250,10 @@ section h2::after {
   background-color: black;
 }
 
+#competences{
+  background-color: var(--gray);
+}
+
 .competence-category:hover {
   transform: translateY(-5px);
 }
@@ -289,7 +293,7 @@ section h2::after {
 
 /* Section Projets */
 .projets {
-  background: var(--gray);
+  background: var(--white);
 }
 
 .projets-grid {

@@ -251,7 +251,7 @@ function openProjectPopup(projectId) {
   `;
   linkEl.onmouseover = () => {
     linkEl.style.transform = 'translateY(-2px)';
-    linkEl.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.6)';
+    linkEl.style.boxShadow = '0 6px 20px #ff6b35';
   };
   linkEl.onmouseout = () => {
     linkEl.style.transform = 'translateY(0)';
