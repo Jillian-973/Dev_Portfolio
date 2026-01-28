@@ -29,26 +29,26 @@ const projectsData = {
     tags: ['HTML', 'CSS']
   },
   5: {
-    image: 'img/adopt.png',
-    title: 'Adopte un chien',
-    description: 'Site vitrine sur un potentiel site d\'adoption de chien (Avec responsive)',
-    link: 'https://jillian-973.github.io/Adopte_chien/',
-    tags: [ 'HTML', 'CSS']
-  },
-  6: {
     image: 'img/embleme.jpg',
     title: 'Agence Belmont',
     description: 'Site imaginaire d\'une agence pour problème paranormal inspiré de l\'univers de castlevania pour s\'entrainer au JavaScript',
     link: 'https://jillian-973.github.io/Agence_Belmont/',
     tags: ['HTML', 'CSS', 'JavaScript' ]
   },
-    7: {
+    6: {
     image: 'img/meteo.png',
     title: 'Météo France',
     description: 'Site météorologique utilisant une API pour récupérer les données météo en fonction de la ville entrée par l\'utilisateur. Afin de s\'entrainer au JavaScript et à l\'utilisation d\'API.',
     link: 'https://jillian-973.github.io/Meteo_France/',
     tags: ['HTML', 'CSS', 'JavaScript' ]
-  }
+  },
+    7: {
+    image: 'img/sniperGame.png',
+    title: 'Sniper Game',
+    description: 'jeu',
+    link: 'https://jillian-973.github.io/sniper_game/',
+    tags: ['HTML', 'CSS', 'JavaScript' ]
+  },
 };
 
 // Header au scroll
