@@ -150,6 +150,15 @@ section {
   margin: 0 auto;
 }
 
+.ligne{
+    max-width: 1200px;
+  margin: 0 auto;
+
+  hr{
+    border: 1.5px solid var(--orange);
+  }
+}
+
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 50px;
@@ -238,7 +247,6 @@ section h2::after {
   transition: background-color 0.3s;
   margin-top: 3rem;
   margin-left: 41%;
-  
 
   a {
     text-decoration: none;
@@ -250,7 +258,7 @@ section h2::after {
   background-color: black;
 }
 
-#competences{
+#competences {
   background-color: var(--gray);
 }
 
@@ -291,15 +299,14 @@ section h2::after {
   transition: width 1s ease;
 }
 
-.link{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.socialLink {
   background-color: var(--gray);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 100px;
-  img{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  img {
     width: 70px;
   }
 }
@@ -321,7 +328,9 @@ section h2::after {
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -521,7 +530,9 @@ section h2::after {
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
 }
 
 .submit-btn:hover {

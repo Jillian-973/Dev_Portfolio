@@ -238,6 +238,7 @@ function openProjectPopup(projectId) {
   const linkEl = document.createElement('a');
   linkEl.href = project.link;
   linkEl.textContent = 'Voir le projet';
+  linkEl.target = "_blank";
   linkEl.style.cssText = `
     display: inline-block;
     background: linear-gradient(135deg, #ff6b35 60%, #333 100%);
