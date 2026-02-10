@@ -3,14 +3,14 @@ const projectsData = {
   1: {
     image: 'img/chronoquest.png',
     title: 'Chronoquest',
-    description: 'Projet de partiel : conception d\'un site web en html CSS et Javascript sur un sujet donné (toutes les infos sont présentes sur le site).',
+    description: 'Projet de partiel : conception d\'un site web en html CSS et Javascript sur un sujet donné (toutes les infos sont présentes sur le site). C\'est le premier site "complet" que j\'ai pu réaliser, j\'ai pu m\'entrainer à faire du responsive et à faire des animations en CSS et JavaScript. ainsi qu\'un carroussel.',
     link: 'https://jillian-973.github.io/Chrono_quest/',
     tags: ['HTML', 'CSS', 'JavaScript']
   },
   2: {
     image: 'img/melon.png',
     title: 'JetGun',
-    description: 'Jeu en 2.5D que j\'ai pu coder en tant que dev en équipe de game developpeur et game designer',
+    description: 'Jeu en 2.5D que j\'ai pu coder en tant que dev en équipe de game developpeur et game designer, c\'est le premier jeu complet que j\'ai pu réaliser en situation professionnel simulere, j\'ai pu m\'entrainer à coder en C# dans le moteur de jeu Unity, à faire du versionning avec git et à travailler en équipe.',
     link: 'https://jillian-973.github.io/JetGun/',
     tags: ['C#']
   },
@@ -24,14 +24,14 @@ const projectsData = {
   4: {
     image: 'img/site yoga.png',
     title: 'Yoga Center',
-    description: 'Site vitrine sur un potentiel site pour réserver des cours de yoga avec un professeur (Avec responsive)',
+    description: 'Site vitrine sur un potentiel site pour réserver des cours de yoga avec un professeur, premier site vitrine réaliser pour m\'essayer a l\'HTML et au CSS (Avec responsive)',
     link: 'https://jillian-973.github.io/Yoga_center/',
     tags: ['HTML', 'CSS']
   },
   5: {
     image: 'img/embleme.jpg',
     title: 'Agence Belmont',
-    description: 'Site imaginaire d\'une agence pour problème paranormal inspiré de l\'univers de castlevania pour s\'entrainer au JavaScript',
+    description: 'Site imaginaire d\'une agence pour problème paranormal inspiré de l\'univers de castlevania pour s\'entrainer au JavaScript, j\'ai réutiliser le code du quizz pour mon formulaire de contact et j\'ai pu faire des animations en CSS et JavaScript pour rendre le site plus dynamique.',
     link: 'https://jillian-973.github.io/Agence_Belmont/',
     tags: ['HTML', 'CSS', 'JavaScript' ]
   },
@@ -45,9 +45,16 @@ const projectsData = {
     7: {
     image: 'img/sniperGame.png',
     title: 'Sniper Game',
-    description: 'jeu',
+    description: 'Jeu de tir en 2D réalisé en cours avec JavaScript, HTML et CSS. J\'ai pu m\'entrainer à créer des animations et des interactions dynamiques. C\'est un one page avec un start, game et game over display qui s\'affichent au fur et à mesure que le jeu avance, j\'ai aussi pu faire un système de score et de timer pour rendre le jeu plus intéressant.',
     link: 'https://jillian-973.github.io/sniper_game/',
     tags: ['HTML', 'CSS', 'JavaScript' ]
+  },
+    8: {
+    image: 'img/darkheim.png',
+    title: 'Darkheim',
+    description: 'Jeu Rogue Like en 2D réalisé lor d\'un concours "Game Jam" avec Godot, j\'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d\'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C\'est un projet que j\'ai pu réaliser en équipe avec d\'autres game designer, j\'ai pu m\'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.',
+    link: 'https://jillixn.itch.io/darkheim',
+    tags: ['Godot', 'GDScript']
   },
 };
 
