@@ -22,11 +22,11 @@ const projectsData = {
     tags: ['HTML', 'CSS', 'JavaScript']
   },
   4: {
-    image: 'img/site yoga.png',
-    title: 'Yoga Center',
-    description: 'Site vitrine sur un potentiel site pour réserver des cours de yoga avec un professeur, premier site vitrine réaliser pour m\'essayer a l\'HTML et au CSS (Avec responsive)',
-    link: 'https://jillian-973.github.io/Yoga_center/',
-    tags: ['HTML', 'CSS']
+    image: 'img/sniperGame.png',
+    title: 'Sniper Game',
+    description: 'Jeu de tir en 2D réalisé en cours avec JavaScript, HTML et CSS. J\'ai pu m\'entrainer à créer des animations et des interactions dynamiques. C\'est un one page avec un start, game et game over display qui s\'affichent au fur et à mesure que le jeu avance, j\'ai aussi pu faire un système de score et de timer pour rendre le jeu plus intéressant.',
+    link: 'https://jillian-973.github.io/sniper_game/',
+    tags: ['HTML', 'CSS', 'JavaScript' ]
   },
   5: {
     image: 'img/embleme.jpg',
@@ -43,13 +43,6 @@ const projectsData = {
     tags: ['HTML', 'CSS', 'JavaScript' ]
   },
     7: {
-    image: 'img/sniperGame.png',
-    title: 'Sniper Game',
-    description: 'Jeu de tir en 2D réalisé en cours avec JavaScript, HTML et CSS. J\'ai pu m\'entrainer à créer des animations et des interactions dynamiques. C\'est un one page avec un start, game et game over display qui s\'affichent au fur et à mesure que le jeu avance, j\'ai aussi pu faire un système de score et de timer pour rendre le jeu plus intéressant.',
-    link: 'https://jillian-973.github.io/sniper_game/',
-    tags: ['HTML', 'CSS', 'JavaScript' ]
-  },
-    8: {
     image: 'img/darkheim.png',
     title: 'Darkheim',
     description: 'Jeu Rogue Like en 2D réalisé lor d\'un concours "Game Jam" avec Godot, j\'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d\'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C\'est un projet que j\'ai pu réaliser en équipe avec d\'autres game designer, j\'ai pu m\'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.',
