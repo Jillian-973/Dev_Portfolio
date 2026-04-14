@@ -1,53 +1,76 @@
 // Données des projets
 const projectsData = {
   1: {
-    image: 'img/chronoquest.png',
-    title: 'Chronoquest',
-    description: 'Projet de partiel : conception d\'un site web en html CSS et Javascript sur un sujet donné (toutes les infos sont présentes sur le site). C\'est le premier site "complet" que j\'ai pu réaliser, j\'ai pu m\'entrainer à faire du responsive et à faire des animations en CSS et JavaScript. ainsi qu\'un carroussel.',
-    link: 'https://jillian-973.github.io/Chrono_quest/',
-    tags: ['HTML', 'CSS', 'JavaScript']
+    image: "img/chronoquest.png",
+    title: "Chronoquest",
+    description:
+      "Projet de partiel : conception d'un site web en html CSS et Javascript sur un sujet donné (toutes les infos sont présentes sur le site). C'est le premier site \"complet\" que j'ai pu réaliser, j'ai pu m'entrainer à faire du responsive et à faire des animations en CSS et JavaScript. ainsi qu'un carroussel.",
+    link: "https://jillian-973.github.io/Chrono_quest/",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
   2: {
-    image: 'img/melon.png',
-    title: 'JetGun',
-    description: 'Jeu en 2.5D que j\'ai pu coder en tant que dev en équipe de game developpeur et game designer, c\'est le premier jeu complet que j\'ai pu réaliser en situation professionnel simulere, j\'ai pu m\'entrainer à coder en C# dans le moteur de jeu Unity, à faire du versionning avec git et à travailler en équipe.',
-    link: 'https://jillian-973.github.io/JetGun/',
-    tags: ['C#']
+    image: "img/melon.png",
+    title: "JetGun",
+    description:
+      "Jeu en 2.5D que j'ai pu coder en tant que dev en équipe de game developpeur et game designer, c'est le premier jeu complet que j'ai pu réaliser en situation professionnel simulere, j'ai pu m'entrainer à coder en C# dans le moteur de jeu Unity, à faire du versionning avec git et à travailler en équipe.",
+    link: "https://jillian-973.github.io/JetGun/",
+    tags: ["C#"],
   },
   3: {
-    image: 'img/quizz.png',
-    title: 'Jeu Quizz FDD',
-    description: 'Jeu quizz sur des fruits du demon de l\'anime one piece réalisé en cours afin de s\'entrainer au JavaScript, le défi était de faire un quizz sur une one page avec plusieurs display qui s\'affichent au fur et à mesure que le quizz avance.',
-    link: 'https://jillian-973.github.io/Quizz_FDD/',
-    tags: ['HTML', 'CSS', 'JavaScript']
+    image: "img/quizz.png",
+    title: "Jeu Quizz FDD",
+    description:
+      "Jeu quizz sur des fruits du demon de l'anime one piece réalisé en cours afin de s'entrainer au JavaScript, le défi était de faire un quizz sur une one page avec plusieurs display qui s'affichent au fur et à mesure que le quizz avance.",
+    link: "https://jillian-973.github.io/Quizz_FDD/",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
   4: {
-    image: 'img/sniperGame.png',
-    title: 'Sniper Game',
-    description: 'Jeu de tir en 2D réalisé en cours avec JavaScript, HTML et CSS. J\'ai pu m\'entrainer à créer des animations et des interactions dynamiques. C\'est un one page avec un start, game et game over display qui s\'affichent au fur et à mesure que le jeu avance, j\'ai aussi pu faire un système de score et de timer pour rendre le jeu plus intéressant.',
-    link: 'https://jillian-973.github.io/sniper_game/',
-    tags: ['HTML', 'CSS', 'JavaScript' ]
+    image: "img/sniperGame.png",
+    title: "Sniper Game",
+    description:
+      "Jeu de tir en 2D réalisé en cours avec JavaScript, HTML et CSS. J'ai pu m'entrainer à créer des animations et des interactions dynamiques. C'est un one page avec un start, game et game over display qui s'affichent au fur et à mesure que le jeu avance, j'ai aussi pu faire un système de score et de timer pour rendre le jeu plus intéressant.",
+    link: "https://jillian-973.github.io/sniper_game/",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
   5: {
-    image: 'img/embleme.jpg',
-    title: 'Agence Belmont',
-    description: 'Site imaginaire d\'une agence pour problème paranormal inspiré de l\'univers de castlevania pour s\'entrainer au JavaScript, j\'ai réutiliser le code du quizz pour mon formulaire de contact et j\'ai pu faire des animations en CSS et JavaScript pour rendre le site plus dynamique.',
-    link: 'https://jillian-973.github.io/Agence_Belmont/',
-    tags: ['HTML', 'CSS', 'JavaScript' ]
+    image: "img/embleme.jpg",
+    title: "Agence Belmont",
+    description:
+      "Site imaginaire d'une agence pour problème paranormal inspiré de l'univers de castlevania pour s'entrainer au JavaScript, j'ai réutiliser le code du quizz pour mon formulaire de contact et j'ai pu faire des animations en CSS et JavaScript pour rendre le site plus dynamique.",
+    link: "https://jillian-973.github.io/Agence_Belmont/",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
-    6: {
-    image: 'img/meteo.png',
-    title: 'Météo France',
-    description: 'Site météorologique utilisant une API pour récupérer les données météo en fonction de la ville entrée par l\'utilisateur. Afin de s\'entrainer au JavaScript et à l\'utilisation d\'API.',
-    link: 'https://jillian-973.github.io/Meteo_France/',
-    tags: ['HTML', 'CSS', 'JavaScript' ]
+  6: {
+    image: "img/meteo.png",
+    title: "Météo France",
+    description:
+      "Site météorologique utilisant une API pour récupérer les données météo en fonction de la ville entrée par l'utilisateur. Afin de s'entrainer au JavaScript et à l'utilisation d'API.",
+    link: "https://jillian-973.github.io/Meteo_France/",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
-    7: {
-    image: 'img/darkheim.png',
-    title: 'Darkheim',
-    description: 'Jeu Rogue Like en 2D réalisé lor d\'un concours "Game Jam" avec Godot, j\'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d\'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C\'est un projet que j\'ai pu réaliser en équipe avec d\'autres game designer, j\'ai pu m\'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.',
-    link: 'https://jillixn.itch.io/darkheim',
-    tags: ['Godot', 'GDScript']
+  7: {
+    image: "img/darkheim.png",
+    title: "Darkheim",
+    description:
+      "Jeu Rogue Like en 2D réalisé lor d'un concours \"Game Jam\" avec Godot, j'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C'est un projet que j'ai pu réaliser en équipe avec d'autres game designer, j'ai pu m'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.",
+    link: "https://jillixn.itch.io/darkheim",
+    tags: ["Godot", "GDScript"],
+  },
+  8: {
+    image: "img/note-de-frais.png",
+    title: "Darkheim",
+    description:
+      "Jeu Rogue Like en 2D réalisé lor d'un concours \"Game Jam\" avec Godot, j'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C'est un projet que j'ai pu réaliser en équipe avec d'autres game designer, j'ai pu m'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.",
+    link: "https://github.com/Jillian-973/Note-de-frais-",
+    tags: ["HTML", "CSS", "Node.js", "MongoDB", "Express", "EJS"],
+  },
+  9: {
+    image: "img/invoice-generator.png",
+    title: "Invoice Generator",
+    description:
+      "Jeu Rogue Like en 2D réalisé lor d'un concours \"Game Jam\" avec Godot, j'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C'est un projet que j'ai pu réaliser en équipe avec d'autres game designer, j'ai pu m'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.",
+    link: "#",
+    tags: ["HTML", "CSS", "Node.js", "Express", "EJS"],
   },
 };
 
@@ -106,7 +129,6 @@ const modalDescription = document.getElementById("modalDescription");
 
 document.querySelectorAll;
 
-
 //pop up
 
 function openProjectPopup(projectId) {
@@ -114,7 +136,7 @@ function openProjectPopup(projectId) {
   if (!project) return;
 
   // Créer l'overlay
-  const overlay = document.createElement('div');
+  const overlay = document.createElement("div");
   overlay.style.cssText = `
     position: fixed;
     top: 0;
@@ -130,7 +152,7 @@ function openProjectPopup(projectId) {
   `;
 
   // Créer la pop-up
-  const popup = document.createElement('div');
+  const popup = document.createElement("div");
   popup.style.cssText = `
     background: white;
     border-radius: 16px;
@@ -145,8 +167,8 @@ function openProjectPopup(projectId) {
   `;
 
   // Bouton de fermeture
-  const closeBtn = document.createElement('button');
-  closeBtn.innerHTML = '&times;';
+  const closeBtn = document.createElement("button");
+  closeBtn.innerHTML = "&times;";
   closeBtn.style.cssText = `
     position: absolute;
     top: 20px;
@@ -167,16 +189,16 @@ function openProjectPopup(projectId) {
     transition: all 0.3s;
   `;
   closeBtn.onmouseover = () => {
-    closeBtn.style.transform = 'rotate(90deg)';
-    closeBtn.style.background = '#f0f0f0';
+    closeBtn.style.transform = "rotate(90deg)";
+    closeBtn.style.background = "#f0f0f0";
   };
   closeBtn.onmouseout = () => {
-    closeBtn.style.transform = 'rotate(0deg)';
-    closeBtn.style.background = 'white';
+    closeBtn.style.transform = "rotate(0deg)";
+    closeBtn.style.background = "white";
   };
 
   // Image
-  const img = document.createElement('img');
+  const img = document.createElement("img");
   img.src = project.image;
   img.alt = project.title;
   img.style.cssText = `
@@ -187,13 +209,13 @@ function openProjectPopup(projectId) {
   `;
 
   // Conteneur du contenu
-  const content = document.createElement('div');
+  const content = document.createElement("div");
   content.style.cssText = `
     padding: 30px;
   `;
 
   // Titre
-  const titleEl = document.createElement('h2');
+  const titleEl = document.createElement("h2");
   titleEl.textContent = project.title;
   titleEl.style.cssText = `
     margin: 0 0 15px 0;
@@ -203,15 +225,15 @@ function openProjectPopup(projectId) {
   `;
 
   // Tags
-  const tagsContainer = document.createElement('div');
+  const tagsContainer = document.createElement("div");
   tagsContainer.style.cssText = `
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 20px;
   `;
-  project.tags.forEach(tag => {
-    const tagEl = document.createElement('span');
+  project.tags.forEach((tag) => {
+    const tagEl = document.createElement("span");
     tagEl.textContent = tag;
     tagEl.style.cssText = `
       background: #ff6b35;
@@ -225,7 +247,7 @@ function openProjectPopup(projectId) {
   });
 
   // Description
-  const descEl = document.createElement('p');
+  const descEl = document.createElement("p");
   descEl.textContent = project.description;
   descEl.style.cssText = `
     margin: 0 0 25px 0;
@@ -235,9 +257,9 @@ function openProjectPopup(projectId) {
   `;
 
   // Lien
-  const linkEl = document.createElement('a');
+  const linkEl = document.createElement("a");
   linkEl.href = project.link;
-  linkEl.textContent = 'Voir le projet';
+  linkEl.textContent = "Voir le projet";
   linkEl.target = "_blank";
   linkEl.style.cssText = `
     display: inline-block;
@@ -251,12 +273,12 @@ function openProjectPopup(projectId) {
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
   `;
   linkEl.onmouseover = () => {
-    linkEl.style.transform = 'translateY(-2px)';
-    linkEl.style.boxShadow = '0 6px 20px #ff6b35';
+    linkEl.style.transform = "translateY(-2px)";
+    linkEl.style.boxShadow = "0 6px 20px #ff6b35";
   };
   linkEl.onmouseout = () => {
-    linkEl.style.transform = 'translateY(0)';
-    linkEl.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.4)';
+    linkEl.style.transform = "translateY(0)";
+    linkEl.style.boxShadow = "0 4px 15px rgba(102, 126, 234, 0.4)";
   };
 
   // Assembler le contenu
@@ -272,7 +294,7 @@ function openProjectPopup(projectId) {
   overlay.appendChild(popup);
 
   // Ajouter les animations CSS
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   style.textContent = `
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -293,7 +315,7 @@ function openProjectPopup(projectId) {
 
   // Fonction de fermeture
   const closePopup = () => {
-    overlay.style.animation = 'fadeOut 0.3s';
+    overlay.style.animation = "fadeOut 0.3s";
     setTimeout(() => overlay.remove(), 300);
   };
   closeBtn.onclick = closePopup;
@@ -306,12 +328,12 @@ function openProjectPopup(projectId) {
 }
 
 // Initialiser les événements sur les cartes de projet
-document.addEventListener('DOMContentLoaded', () => {
-  const projectCards = document.querySelectorAll('.project-card');
-  projectCards.forEach(card => {
-    card.style.cursor = 'pointer';
-    card.addEventListener('click', () => {
-      const projectId = card.getAttribute('data-project');
+document.addEventListener("DOMContentLoaded", () => {
+  const projectCards = document.querySelectorAll(".project-card");
+  projectCards.forEach((card) => {
+    card.style.cursor = "pointer";
+    card.addEventListener("click", () => {
+      const projectId = card.getAttribute("data-project");
       openProjectPopup(projectId);
     });
   });

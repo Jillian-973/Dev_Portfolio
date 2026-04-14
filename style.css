@@ -10,6 +10,11 @@
   --white: #ffffff;
   --gray: #f4f4f4;
   --dark-gray: #333;
+  --green: #25d99f;
+  --light-green: #a8ddb5;
+  --dark-green: #2d5f4f;
+  --violet: #7f22fe;
+  --yellow: #fbd438;
 }
 
 html {
@@ -150,11 +155,11 @@ section {
   margin: 0 auto;
 }
 
-.ligne{
-    max-width: 1200px;
+.ligne {
+  max-width: 1200px;
   margin: 0 auto;
 
-  hr{
+  hr {
     border: 1.5px solid var(--orange);
   }
 }
@@ -316,6 +321,13 @@ section h2::after {
   background: var(--white);
 }
 
+.legende {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
 .projets-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -371,6 +383,20 @@ section h2::after {
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 500;
+}
+
+
+.tag.back {
+  background-color: var(--violet);
+}
+.tag.game {
+  background-color: var(--black);
+}
+.tag.bdd {
+  background-color: var(--dark-green);
+}
+.tag.framework {
+  background-color: var(--yellow);
 }
 
 /* Modal */
