@@ -58,19 +58,19 @@ const projectsData = {
   },
   8: {
     image: "img/note-de-frais.png",
-    title: "Darkheim",
+    title: "Note de frais",
     description:
-      "Jeu Rogue Like en 2D réalisé lor d'un concours \"Game Jam\" avec Godot, j'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C'est un projet que j'ai pu réaliser en équipe avec d'autres game designer, j'ai pu m'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.",
+      "Application de gestion de notes de frais réalisée en cours avec Node.js, Express et MongoDB. J'ai pu m'entrainer à créer une application full-stack avec une base de données NoSQL et à gérer les routes et les requêtes HTTP, tout en utilisant un nouvelle outil qui est Puppeteer.",
     link: "https://github.com/Jillian-973/Note-de-frais-",
-    tags: ["HTML", "CSS", "Node.js", "MongoDB", "Express", "EJS"],
+    tags: ["HTML", "CSS", "Node.js", "Express", "Puppeteer","MongoDB", "EJS"],
   },
   9: {
     image: "img/invoice-generator.png",
     title: "Invoice Generator",
     description:
-      "Jeu Rogue Like en 2D réalisé lor d'un concours \"Game Jam\" avec Godot, j'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C'est un projet que j'ai pu réaliser en équipe avec d'autres game designer, j'ai pu m'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.",
+      "Application de génération de factures réalisée lors d'un projet personnel avec Node.js, Express et Puppeteer. J'ai pu à gérer des routes et des requêtes HTTP, tout en utilisant un nouvelle outil qui est Puppeteer. C'était la premiere fois que je touchais vraiment a du back end et j'ai pu apprendre beaucoup de choses sur la gestion de serveur et la génération de PDF avec Puppeteer. C'est un projet que j'ai réalisé afin de générer des facture pour mon activités personnelle de freelance.",
     link: "#",
-    tags: ["HTML", "CSS", "Node.js", "Express", "EJS"],
+    tags: ["HTML", "CSS", "Node.js", "Express", "Puppeteer", "EJS"],
   },
 };
 
