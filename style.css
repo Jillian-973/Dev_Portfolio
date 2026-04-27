@@ -240,9 +240,11 @@ section h2::after {
 
 .cape {
   text-align: center;
+  font-size: 18px;
+  font-weight: 500;
   padding-bottom: 3rem;
   margin: 0 10rem;
-  color: var(--orange);
+  color: var(--black);
 }
 
 .btn {
