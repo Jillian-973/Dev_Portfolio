@@ -15,6 +15,11 @@
   --dark-green: #2d5f4f;
   --violet: #7f22fe;
   --yellow: #fbd438;
+  --co-1 :#ffa071;
+  --co-2 :#ff6b35;
+  --co-3 :#fe4711;
+  --co-4 :#c61d08;
+  --co-5 :#7e1810;
 }
 
 html {
@@ -305,14 +310,14 @@ section h2::after {
 }
 
 .socialLink {
-  background-color: var(--gray);
   display: flex;
   justify-content: space-evenly;
+  padding-top: 100px;
 }
 
 .link {
   img {
-    width: 70px;
+    width: 80px;
   }
 }
 
@@ -377,7 +382,7 @@ section h2::after {
 }
 
 .tag {
-  background: var(--orange);
+  background: var(--co-1);
   color: var(--white);
   padding: 5px 15px;
   border-radius: 20px;
@@ -387,16 +392,16 @@ section h2::after {
 
 
 .tag.back {
-  background-color: var(--violet);
-}
-.tag.game {
-  background-color: var(--black);
+  background-color: var(--co-2);
 }
 .tag.bdd {
-  background-color: var(--dark-green);
+  background-color: var(--co-3);  
+}
+.tag.game {
+  background-color: var(--co-4);
 }
 .tag.framework {
-  background-color: var(--yellow);
+  background-color: var(--co-5);
 }
 
 /* Modal */
