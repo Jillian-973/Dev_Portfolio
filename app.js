@@ -37,7 +37,7 @@ const projectsData = {
     title: "Memory Game",
     description:
       "Jeu de mémoire réalisé en cours avec PHP. J'ai pu m'entrainer à créer des animations et des interactions dynamiques. Memory Game est un jeu de plateau web classique où les joueurs doivent mémoriser et retrouver des paires de cartes identiques. Chaque session est entièrement gérée en PHP avec les sessions natives du serveur.",
-    link: "https://jillian-973.github.io/Memory_Game/",
+    link: "https://github.com/Jillian-973/memory-game",
     tags: ["HTML", "CSS", "JavaScript"],
   },
   6: {
