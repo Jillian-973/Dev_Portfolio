@@ -14,7 +14,7 @@ const projectsData = {
     description:
       "Jeu en 2.5D que j'ai pu coder en tant que dev en équipe de game developpeur et game designer, c'est le premier jeu complet que j'ai pu réaliser en situation professionnel simulere, j'ai pu m'entrainer à coder en C# dans le moteur de jeu Unity, à faire du versionning avec git et à travailler en équipe.",
     link: "https://jillian-973.github.io/JetGun/",
-    tags: ["C#"],
+    tags: ["C#", "Unity"],
   },
   3: {
     image: "img/quizz.png",
@@ -33,11 +33,11 @@ const projectsData = {
     tags: ["HTML", "CSS", "JavaScript"],
   },
   5: {
-    image: "img/embleme.jpg",
-    title: "Agence Belmont",
+    image: "img/memory.png",
+    title: "Memory Game",
     description:
-      "Site imaginaire d'une agence pour problème paranormal inspiré de l'univers de castlevania pour s'entrainer au JavaScript, j'ai réutiliser le code du quizz pour mon formulaire de contact et j'ai pu faire des animations en CSS et JavaScript pour rendre le site plus dynamique.",
-    link: "https://jillian-973.github.io/Agence_Belmont/",
+      "Jeu de mémoire réalisé en cours avec PHP. J'ai pu m'entrainer à créer des animations et des interactions dynamiques. Memory Game est un jeu de plateau web classique où les joueurs doivent mémoriser et retrouver des paires de cartes identiques. Chaque session est entièrement gérée en PHP avec les sessions natives du serveur.",
+    link: "https://jillian-973.github.io/Memory_Game/",
     tags: ["HTML", "CSS", "JavaScript"],
   },
   6: {

@@ -639,3 +639,12 @@ footer {
     padding: 20px;
   }
 }
+
+@media (min-width: 375px) {
+  .cape{
+    margin: 0 2rem;
+  }
+  .legende{
+    flex-wrap: wrap;
+  }
+}
