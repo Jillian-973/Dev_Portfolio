@@ -258,7 +258,6 @@ section h2::after {
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 3rem;
-  margin-left: 41%;
 
   a {
     text-decoration: none;
@@ -268,6 +267,11 @@ section h2::after {
 
 .btn:hover {
   background-color: black;
+}
+
+.cv{
+  display: flex;
+  justify-content: center;
 }
 
 #competences {
