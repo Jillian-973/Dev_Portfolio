@@ -1,76 +1,104 @@
+// Correspondance des technologies -> logo + nom
+const STACKS = {
+  html5: ["img/logos/html5.svg", "HTML5"],
+  css3: ["img/logos/css3.svg", "CSS3"],
+  javascript: ["img/logos/javascript.svg", "JavaScript"],
+  sass: ["img/logos/sass.svg", "Sass"],
+  nodejs: ["img/logos/nodejs.svg", "Node.js"],
+  express: ["img/logos/express.svg", "Express"],
+  php: ["img/logos/php.svg", "PHP"],
+  ejs: ["img/logos/ejs.svg", "EJS"],
+  mysql: ["img/logos/mysql.svg", "MySQL"],
+  mongodb: ["img/logos/mongodb.svg", "MongoDB"],
+  prisma: ["img/logos/prisma.svg", "Prisma"],
+  wordpress: ["img/logos/wordpress.svg", "WordPress"],
+  prestashop: ["img/logos/prestashop.svg", "PrestaShop"],
+  unity: ["img/logos/unity.svg", "Unity"],
+  csharp: ["img/logos/csharp.svg", "C#"],
+  unrealengine: ["img/logos/unrealengine.svg", "Unreal Engine"],
+  cplusplus: ["img/logos/cplusplus.svg", "C++"],
+  godot: ["img/logos/godot.svg", "Godot"],
+  git: ["img/logos/git.svg", "Git"],
+  puppeteer: ["img/logos/puppeteer.svg", "Puppeteer"],
+  postgresql: ["img/logos/postgresql.svg", "PostgreSQL"],
+  neon: ["img/logos/neon.svg", "Neon"],
+  nuxt: ["img/logos/nuxt.svg", "Nuxt"],
+  tailwindcss: ["img/logos/tailwindcss.svg", "Tailwind CSS"],
+};
+
 // Données des projets
 const projectsData = {
   1: {
     image: "img/chronoquest.png",
     title: "Chronoquest",
     description:
-      "Projet de partiel : conception d'un site web en html CSS et Javascript sur un sujet donné (toutes les infos sont présentes sur le site). C'est le premier site \"complet\" que j'ai pu réaliser, j'ai pu m'entrainer à faire du responsive et à faire des animations en CSS et JavaScript. ainsi qu'un carroussel.",
+      "Projet de partiel : conception d'un site web en HTML, CSS et JavaScript sur un sujet donné (toutes les infos sont présentes sur le site). C'est le premier site \"complet\" que j'ai pu réaliser, j'ai pu m'entrainer à faire du responsive et à faire des animations en CSS et JavaScript, ainsi qu'un carrousel.",
     link: "https://jillian-973.github.io/Chrono_quest/",
-    tags: ["HTML", "CSS", "JavaScript"],
+    stack: ["html5", "css3", "javascript"],
   },
   2: {
     image: "img/melon.png",
     title: "JetGun",
     description:
-      "Jeu en 2.5D que j'ai pu coder en tant que dev en équipe de game developpeur et game designer, c'est le premier jeu complet que j'ai pu réaliser en situation professionnel simulere, j'ai pu m'entrainer à coder en C# dans le moteur de jeu Unity, à faire du versionning avec git et à travailler en équipe.",
+      "Jeu en 2.5D que j'ai pu coder en tant que dev en équipe de game developpeur et game designer, c'est le premier jeu complet que j'ai pu réaliser en situation professionnelle simulée. J'ai pu m'entrainer à coder en C# dans le moteur de jeu Unity, à faire du versionning avec git et à travailler en équipe.",
     link: "https://jillian-973.github.io/JetGun/",
-    tags: ["C#", "Unity"],
+    stack: ["csharp", "unity"],
   },
   3: {
     image: "img/quizz.png",
     title: "Jeu Quizz FDD",
     description:
-      "Jeu quizz sur des fruits du demon de l'anime one piece réalisé en cours afin de s'entrainer au JavaScript, le défi était de faire un quizz sur une one page avec plusieurs display qui s'affichent au fur et à mesure que le quizz avance.",
+      "Jeu quizz sur des fruits du démon de l'anime One Piece réalisé en cours afin de s'entrainer au JavaScript. Le défi était de faire un quizz sur une one page avec plusieurs affichages qui apparaissent au fur et à mesure que le quizz avance.",
     link: "https://jillian-973.github.io/Quizz_FDD/",
-    tags: ["HTML", "CSS", "JavaScript"],
+    stack: ["html5", "css3", "javascript"],
   },
   4: {
     image: "img/sniperGame.png",
     title: "Sniper Game",
     description:
-      "Jeu de tir en 2D réalisé en cours avec JavaScript, HTML et CSS. J'ai pu m'entrainer à créer des animations et des interactions dynamiques. C'est un one page avec un start, game et game over display qui s'affichent au fur et à mesure que le jeu avance, j'ai aussi pu faire un système de score et de timer pour rendre le jeu plus intéressant.",
+      "Jeu de tir en 2D réalisé en cours avec JavaScript, HTML et CSS. J'ai pu m'entrainer à créer des animations et des interactions dynamiques. C'est une one page avec un start, game et game over qui s'affichent au fur et à mesure que le jeu avance ; j'ai aussi ajouté un système de score et de timer pour rendre le jeu plus intéressant.",
     link: "https://jillian-973.github.io/sniper_game/",
-    tags: ["HTML", "CSS", "JavaScript"],
+    stack: ["html5", "css3", "javascript"],
   },
   5: {
     image: "img/memory.png",
     title: "Memory Game",
     description:
-      "Jeu de mémoire réalisé en cours avec PHP. J'ai pu m'entrainer à créer des animations et des interactions dynamiques. Memory Game est un jeu de plateau web classique où les joueurs doivent mémoriser et retrouver des paires de cartes identiques. Chaque session est entièrement gérée en PHP avec les sessions natives du serveur.",
+      "Jeu de mémoire réalisé en cours avec PHP. Memory Game est un jeu de plateau web classique où les joueurs doivent mémoriser et retrouver des paires de cartes identiques. Chaque session est entièrement gérée en PHP avec les sessions natives du serveur.",
     link: "https://github.com/Jillian-973/memory-game",
-    tags: ["HTML", "CSS", "JavaScript"],
+    stack: ["php"],
   },
   6: {
     image: "img/meteo.png",
     title: "Météo France",
     description:
-      "Site météorologique utilisant une API pour récupérer les données météo en fonction de la ville entrée par l'utilisateur. Afin de s'entrainer au JavaScript et à l'utilisation d'API.",
+      "Site météorologique utilisant une API pour récupérer les données météo en fonction de la ville entrée par l'utilisateur, afin de s'entrainer au JavaScript et à l'utilisation d'API.",
     link: "https://jillian-973.github.io/Meteo_France/",
-    tags: ["HTML", "CSS", "JavaScript"],
+    stack: ["html5", "css3", "javascript"],
   },
   7: {
     image: "img/darkheim.png",
     title: "Darkheim",
     description:
-      "Jeu Rogue Like en 2D réalisé lor d'un concours \"Game Jam\" avec Godot, j'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d'attaque et de détection. La map est généré de manière procédurale pour rendre chaque partie unique. C'est un projet que j'ai pu réaliser en équipe avec d'autres game designer, j'ai pu m'entrainer à coder en GDScript dans le moteur de jeu Godot et à travailler en équipe.",
+      "Jeu Rogue Like en 2D réalisé lors d'un concours \"Game Jam\" avec Godot. J'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d'attaque et de détection. La map est générée de manière procédurale pour rendre chaque partie unique. Un projet réalisé en équipe avec d'autres game designers, l'occasion de m'entrainer à coder en GDScript dans le moteur Godot et à travailler en équipe.",
     link: "https://jillixn.itch.io/darkheim",
-    tags: ["Godot", "GDScript"],
+    stack: ["godot"],
   },
   8: {
     image: "img/note-de-frais.png",
     title: "Note de frais",
     description:
-      "Application de gestion de notes de frais réalisée en cours avec Node.js, Express et MongoDB. J'ai pu m'entrainer à créer une application full-stack avec une base de données NoSQL et à gérer les routes et les requêtes HTTP, tout en utilisant un nouvelle outil qui est Puppeteer.",
+      "Application de gestion de notes de frais réalisée en cours avec Node.js, Express et MongoDB. J'ai pu m'entrainer à créer une application full-stack avec une base de données NoSQL et à gérer les routes et les requêtes HTTP, tout en utilisant un nouvel outil : Puppeteer.",
     link: "https://github.com/Jillian-973/Note-de-frais-",
-    tags: ["HTML", "CSS", "Node.js", "Express", "Puppeteer","MongoDB", "EJS"],
+    stack: ["html5", "css3", "ejs", "nodejs", "express", "puppeteer", "mongodb"],
   },
   9: {
     image: "img/invoice-generator.png",
     title: "Invoice Generator",
     description:
-      "Application de génération de factures réalisée lors d'un projet personnel avec Node.js, Express et Puppeteer. J'ai pu à gérer des routes et des requêtes HTTP, tout en utilisant un nouvelle outil qui est Puppeteer. C'était la premiere fois que je touchais vraiment a du back end et j'ai pu apprendre beaucoup de choses sur la gestion de serveur et la génération de PDF avec Puppeteer. C'est un projet que j'ai réalisé afin de générer des facture pour mon activités personnelle de freelance.",
+      "Application de génération de factures réalisée lors d'un projet personnel avec Node.js, Express et Puppeteer. C'était la première fois que je touchais vraiment au back-end et j'ai beaucoup appris sur la gestion de serveur et la génération de PDF avec Puppeteer. Un projet réalisé pour générer les factures de mon activité de freelance.",
     link: "#",
-    tags: ["HTML", "CSS", "Node.js", "Express", "Puppeteer", "EJS"],
+    stack: ["html5", "css3", "ejs", "nodejs", "express", "puppeteer"],
   },
 };
 
@@ -98,95 +126,55 @@ document.querySelectorAll("nav a").forEach((link) => {
   });
 });
 
-// Animation des barres de compétences au scroll
-const observerOptions = {
-  threshold: 0.5,
-  rootMargin: "0px",
-};
+// Animation de révélation au scroll
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const progressBars = entry.target.querySelectorAll(".skill-progress");
-      progressBars.forEach((bar) => {
-        const progress = bar.getAttribute("data-progress");
-        bar.style.width = progress + "%";
-      });
-    }
+document
+  .querySelectorAll(
+    ".skills-row, .project-card, .exp-card, .edu-item, .apropos-content"
+  )
+  .forEach((el) => {
+    el.classList.add("reveal");
+    revealObserver.observe(el);
   });
-}, observerOptions);
 
-document.querySelectorAll(".competence-category").forEach((category) => {
-  observer.observe(category);
-});
-
-// Gestion de la modal des projets
-const modal = document.getElementById("projectModal");
-const modalClose = document.getElementById("modalClose");
-const modalTitle = document.getElementById("modalTitle");
-const modalImage = document.getElementById("modalImage");
-const modalDescription = document.getElementById("modalDescription");
-
-document.querySelectorAll;
-
-//pop up
-
+// Pop-up des projets
 function openProjectPopup(projectId) {
   const project = projectsData[projectId];
   if (!project) return;
 
-  // Créer l'overlay
   const overlay = document.createElement("div");
   overlay.style.cssText = `
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    animation: fadeIn 0.3s;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7); display: flex; justify-content: center;
+    align-items: center; z-index: 9999; padding: 20px; animation: fadeIn 0.3s;
   `;
 
-  // Créer la pop-up
   const popup = document.createElement("div");
   popup.style.cssText = `
-    background: white;
-    border-radius: 16px;
-    padding: 0;
-    max-width: 600px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    position: relative;
-    animation: slideUp 0.3s;
+    background: white; border-radius: 16px; max-width: 600px; width: 100%;
+    max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    position: relative; animation: slideUp 0.3s;
   `;
 
-  // Bouton de fermeture
   const closeBtn = document.createElement("button");
   closeBtn.innerHTML = "&times;";
+  closeBtn.setAttribute("aria-label", "Fermer");
   closeBtn.style.cssText = `
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 28px;
-    cursor: pointer;
-    color: #333;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
+    position: absolute; top: 20px; right: 20px; background: white; border: none;
+    width: 40px; height: 40px; border-radius: 50%; font-size: 28px; cursor: pointer;
+    color: #333; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 10; display: flex;
+    align-items: center; justify-content: center; transition: all 0.3s;
   `;
   closeBtn.onmouseover = () => {
     closeBtn.style.transform = "rotate(90deg)";
@@ -197,80 +185,56 @@ function openProjectPopup(projectId) {
     closeBtn.style.background = "white";
   };
 
-  // Image
   const img = document.createElement("img");
   img.src = project.image;
   img.alt = project.title;
   img.style.cssText = `
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 16px 16px 0 0;
+    width: 100%; height: 300px; object-fit: cover; border-radius: 16px 16px 0 0;
   `;
 
-  // Conteneur du contenu
   const content = document.createElement("div");
-  content.style.cssText = `
-    padding: 30px;
-  `;
+  content.style.cssText = `padding: 30px;`;
 
-  // Titre
   const titleEl = document.createElement("h2");
   titleEl.textContent = project.title;
-  titleEl.style.cssText = `
-    margin: 0 0 15px 0;
-    font-size: 28px;
-    color: #222;
-    font-weight: 700;
-  `;
+  titleEl.style.cssText = `margin: 0 0 15px 0; font-size: 28px; color: #222; font-weight: 700;`;
 
-  // Tags
-  const tagsContainer = document.createElement("div");
-  tagsContainer.style.cssText = `
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 20px;
-  `;
-  project.tags.forEach((tag) => {
-    const tagEl = document.createElement("span");
-    tagEl.textContent = tag;
-    tagEl.style.cssText = `
-      background: #ff6b35;
-      color: #ffffff;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: 500;
+  // Logos de la stack
+  const stackContainer = document.createElement("div");
+  stackContainer.style.cssText = `display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;`;
+  (project.stack || []).forEach((slug) => {
+    const data = STACKS[slug];
+    if (!data) return;
+    const chip = document.createElement("span");
+    chip.style.cssText = `
+      display: inline-flex; align-items: center; gap: 8px; background: #f4f4f4;
+      border: 1px solid #e9e9ec; border-radius: 10px; padding: 7px 13px 7px 10px;
+      font-size: 14px; font-weight: 500; color: #333;
     `;
-    tagsContainer.appendChild(tagEl);
+    const logo = document.createElement("img");
+    logo.src = data[0];
+    logo.alt = data[1];
+    logo.style.cssText = `width: 20px; height: 20px; object-fit: contain;`;
+    const label = document.createElement("span");
+    label.textContent = data[1];
+    chip.appendChild(logo);
+    chip.appendChild(label);
+    stackContainer.appendChild(chip);
   });
 
-  // Description
   const descEl = document.createElement("p");
   descEl.textContent = project.description;
-  descEl.style.cssText = `
-    margin: 0 0 25px 0;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #555;
-  `;
+  descEl.style.cssText = `margin: 0 0 25px 0; font-size: 16px; line-height: 1.7; color: #555;`;
 
-  // Lien
   const linkEl = document.createElement("a");
   linkEl.href = project.link;
   linkEl.textContent = "Voir le projet";
   linkEl.target = "_blank";
+  linkEl.rel = "noopener";
   linkEl.style.cssText = `
-    display: inline-block;
-    background: linear-gradient(135deg, #ff6b35 60%, #333 100%);
-    color: white;
-    padding: 14px 32px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    display: inline-block; background: linear-gradient(135deg, #ff6b35 60%, #333 100%);
+    color: white; padding: 14px 32px; text-decoration: none; border-radius: 8px;
+    font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 15px rgba(255,107,53,0.4);
   `;
   linkEl.onmouseover = () => {
     linkEl.style.transform = "translateY(-2px)";
@@ -278,42 +242,33 @@ function openProjectPopup(projectId) {
   };
   linkEl.onmouseout = () => {
     linkEl.style.transform = "translateY(0)";
-    linkEl.style.boxShadow = "0 4px 15px rgba(102, 126, 234, 0.4)";
+    linkEl.style.boxShadow = "0 4px 15px rgba(255,107,53,0.4)";
   };
 
-  // Assembler le contenu
   content.appendChild(titleEl);
-  content.appendChild(tagsContainer);
+  content.appendChild(stackContainer);
   content.appendChild(descEl);
   content.appendChild(linkEl);
 
-  // Assembler la pop-up
   popup.appendChild(closeBtn);
   popup.appendChild(img);
   popup.appendChild(content);
   overlay.appendChild(popup);
 
-  // Ajouter les animations CSS
-  const style = document.createElement("style");
-  style.textContent = `
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { 
-        opacity: 0;
-        transform: translateY(30px);
+  if (!document.getElementById("popup-anim")) {
+    const style = document.createElement("style");
+    style.id = "popup-anim";
+    style.textContent = `
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+      @keyframes slideUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
       }
-      to { 
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  `;
-  document.head.appendChild(style);
+    `;
+    document.head.appendChild(style);
+  }
 
-  // Fonction de fermeture
   const closePopup = () => {
     overlay.style.animation = "fadeOut 0.3s";
     setTimeout(() => overlay.remove(), 300);
@@ -323,18 +278,14 @@ function openProjectPopup(projectId) {
     if (e.target === overlay) closePopup();
   };
 
-  // Ajouter au DOM
   document.body.appendChild(overlay);
 }
 
 // Initialiser les événements sur les cartes de projet
 document.addEventListener("DOMContentLoaded", () => {
-  const projectCards = document.querySelectorAll(".project-card");
-  projectCards.forEach((card) => {
-    card.style.cursor = "pointer";
+  document.querySelectorAll(".project-card").forEach((card) => {
     card.addEventListener("click", () => {
-      const projectId = card.getAttribute("data-project");
-      openProjectPopup(projectId);
+      openProjectPopup(card.getAttribute("data-project"));
     });
   });
 });
