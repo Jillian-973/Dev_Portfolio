@@ -146,11 +146,126 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
+/* ===== Décor animé de fond (hero -> à propos) ===== */
+.stage {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #fff6f1 45%, #fdefe7 100%);
+}
+
+.stage-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Disques « basse » qui vibrent sur le beat */
+.thump {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(45px);
+  opacity: 0.25;
+  transform: translate(-50%, -50%) scale(1);
+  animation: thump var(--beat, 2s) ease-in-out infinite;
+}
+
+@keyframes thump {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.16;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.28);
+    opacity: 0.32;
+  }
+}
+
+/* Cercles qui s'émanent comme des ondes sonores */
+.pulse {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.pulse i {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--orange);
+  opacity: 0;
+  transform: scale(0.2);
+  animation: ripple var(--beat, 2s) cubic-bezier(0.2, 0.6, 0.25, 1) infinite;
+}
+
+.pulse i:nth-child(2) {
+  animation-delay: calc(var(--beat, 2s) / 3);
+}
+
+.pulse i:nth-child(3) {
+  animation-delay: calc(var(--beat, 2s) / 3 * 2);
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+/* Positions & tempo variés — des cercles partout sur la page */
+.pulse-1  { top: 7%;  left: 10%; width: 300px; height: 300px; --beat: 1.9s; }
+.pulse-2  { top: 9%;  left: 47%; width: 240px; height: 240px; --beat: 2.3s; }
+.pulse-3  { top: 12%; left: 85%; width: 340px; height: 340px; --beat: 1.7s; }
+.pulse-4  { top: 19%; left: 28%; width: 220px; height: 220px; --beat: 2.5s; }
+.pulse-5  { top: 22%; left: 66%; width: 300px; height: 300px; --beat: 2.0s; }
+.pulse-6  { top: 28%; left: 6%;  width: 260px; height: 260px; --beat: 1.8s; }
+.pulse-7  { top: 31%; left: 93%; width: 360px; height: 360px; --beat: 2.2s; }
+.pulse-8  { top: 38%; left: 40%; width: 240px; height: 240px; --beat: 2.1s; }
+.pulse-9  { top: 43%; left: 16%; width: 300px; height: 300px; --beat: 2.4s; }
+.pulse-10 { top: 47%; left: 76%; width: 260px; height: 260px; --beat: 1.7s; }
+.pulse-11 { top: 53%; left: 4%;  width: 320px; height: 320px; --beat: 2.3s; }
+.pulse-12 { top: 57%; left: 55%; width: 220px; height: 220px; --beat: 1.9s; }
+.pulse-13 { top: 62%; left: 95%; width: 340px; height: 340px; --beat: 2.0s; }
+.pulse-14 { top: 68%; left: 30%; width: 260px; height: 260px; --beat: 2.5s; }
+.pulse-15 { top: 74%; left: 68%; width: 300px; height: 300px; --beat: 1.8s; }
+.pulse-16 { top: 80%; left: 8%;  width: 340px; height: 340px; --beat: 2.4s; }
+.pulse-17 { top: 86%; left: 48%; width: 240px; height: 240px; --beat: 2.1s; }
+.pulse-18 { top: 90%; left: 86%; width: 300px; height: 300px; --beat: 1.9s; }
+.pulse-19 { top: 95%; left: 22%; width: 260px; height: 260px; --beat: 2.2s; }
+.pulse-20 { top: 96%; left: 72%; width: 280px; height: 280px; --beat: 1.7s; }
+
+.thump-1 { top: 16%; left: 78%; width: 340px; height: 340px; background: var(--orange); --beat: 2.0s; }
+.thump-2 { top: 45%; left: 6%;  width: 380px; height: 380px; background: var(--orange-soft); --beat: 2.2s; }
+.thump-3 { top: 70%; left: 92%; width: 340px; height: 340px; background: #ffa071; --beat: 1.9s; }
+.thump-4 { top: 92%; left: 40%; width: 300px; height: 300px; background: var(--orange); --beat: 2.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse i,
+  .thump {
+    animation: none;
+  }
+  .pulse i {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
+
 /* ===== Section Hero ===== */
 .hero {
-  width: 100%;
-  max-width: none;
   min-height: 100vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,7 +280,7 @@ nav a:hover {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 120px 40px 80px;
+  padding: 80px 40px;
 }
 
 .hero::before {
@@ -343,24 +458,12 @@ section h2::after {
   height: 100%;
 }
 
-.domain-index {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--white);
-  background: var(--orange);
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
 .skills-domain h3 {
   font-size: 1.45rem;
   color: var(--black);
   line-height: 1.25;
+  border-left: 4px solid var(--orange);
+  padding-left: 16px;
 }
 
 .skills-stacks {
@@ -395,10 +498,6 @@ section h2::after {
 }
 
 /* ===== Projets ===== */
-.projets {
-  background: var(--white);
-}
-
 .projets-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -602,10 +701,6 @@ section h2::after {
 }
 
 /* ===== Formation (timeline) ===== */
-.formation {
-  background: var(--white);
-}
-
 .edu-list {
   display: flex;
   flex-direction: column;

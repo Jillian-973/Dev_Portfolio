@@ -52,16 +52,43 @@
     </header>
 
     <main>
-      <!-- Section Hero -->
-      <section class="hero" id="hero">
+      <!-- Décor animé de fond (du hero jusqu'à « À propos ») -->
+      <div class="stage">
+        <div class="stage-bg" aria-hidden="true">
+          <span class="thump thump-1"></span>
+          <span class="thump thump-2"></span>
+          <span class="thump thump-3"></span>
+          <span class="thump thump-4"></span>
+          <span class="pulse pulse-1"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-2"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-3"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-4"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-5"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-6"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-7"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-8"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-9"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-10"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-11"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-12"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-13"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-14"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-15"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-16"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-17"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-18"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-19"><i></i><i></i><i></i></span>
+          <span class="pulse pulse-20"><i></i><i></i><i></i></span>
+        </div>
+
+        <!-- Section Hero -->
+        <section class="hero" id="hero">
         <div class="hero-inner">
           <p class="hero-greeting">Bonjour, je suis</p>
           <h1 class="hero-name">Killian<span> Dumoulin</span></h1>
-          <p class="hero-role">Développeur Web</p>
+          <p class="hero-role">Développeur Full-Stack</p>
           <p class="hero-desc">
-            Je conçois des sites et applications web modernes, du front-end au
-            back-end, en plaçant l'expérience utilisateur et les besoins de mes
-            clients au cœur de chaque projet.
+            Etudiant en 3eme année de développement web à MyDigitalSchool Lyon, je recherche une alternance en développement dès Septembre 2026 .
           </p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="img/CvKillian.pdf" download target="_blank">
@@ -96,8 +123,7 @@
 
       <!-- Section Compétences -->
       <section class="competences" id="competences">
-        <p class="eyebrow">Ce que je maîtrise</p>
-        <h2>Mes Compétences</h2>
+        <h2>Compétences</h2>
         <p class="section-lead">
           En constante amélioration : la joie de ce métier fait qu'on apprend
           tous les jours, d'autant plus en étant impliqué, curieux et passionné.
@@ -106,7 +132,6 @@
         <div class="skills-table">
           <div class="skills-row">
             <div class="skills-domain">
-              <span class="domain-index">01</span>
               <h3>Développement Web</h3>
             </div>
             <div class="skills-stacks">
@@ -119,7 +144,6 @@
 
           <div class="skills-row">
             <div class="skills-domain">
-              <span class="domain-index">02</span>
               <h3>Programmation Back-end</h3>
             </div>
             <div class="skills-stacks">
@@ -132,7 +156,6 @@
 
           <div class="skills-row">
             <div class="skills-domain">
-              <span class="domain-index">03</span>
               <h3>Base de données</h3>
             </div>
             <div class="skills-stacks">
@@ -144,7 +167,6 @@
 
           <div class="skills-row">
             <div class="skills-domain">
-              <span class="domain-index">04</span>
               <h3>CMS</h3>
             </div>
             <div class="skills-stacks">
@@ -155,7 +177,6 @@
 
           <div class="skills-row">
             <div class="skills-domain">
-              <span class="domain-index">05</span>
               <h3>Développement de jeux</h3>
             </div>
             <div class="skills-stacks">
@@ -167,7 +188,6 @@
 
           <div class="skills-row">
             <div class="skills-domain">
-              <span class="domain-index">06</span>
               <h3>Outils &amp; Méthodes</h3>
             </div>
             <div class="skills-stacks">
@@ -180,8 +200,7 @@
 
       <!-- Section Projets -->
       <section class="projets" id="projets">
-        <p class="eyebrow">Mes réalisations</p>
-        <h2>Mes Projets</h2>
+        <h2>Projets</h2>
 
         <div class="projets-grid">
           <!-- Projet : Sniper Game -->
@@ -307,7 +326,6 @@
 
       <!-- Section Expériences -->
       <section class="experiences" id="experiences">
-        <p class="eyebrow">Mon parcours professionnel</p>
         <h2>Expériences</h2>
 
         <div class="exp-list">
@@ -393,8 +411,7 @@
 
       <!-- Section Formation -->
       <section class="formation" id="formation">
-        <p class="eyebrow">Mon cursus</p>
-        <h2>Formation</h2>
+        <h2>Formations</h2>
 
         <div class="edu-list">
           <!-- Duplique un bloc .edu-item pour chaque formation -->
@@ -437,7 +454,6 @@
 
       <!-- Section À propos -->
       <section class="apropos" id="apropos">
-        <p class="eyebrow">Faisons connaissance</p>
         <h2>À propos</h2>
         <div class="apropos-content">
           <div class="apropos-photo">
@@ -461,10 +477,12 @@
           </div>
         </div>
       </section>
+      </div>
+      <!-- Fin du décor animé -->
 
       <!-- Section Contact -->
       <section class="contact" id="contact">
-        <p class="eyebrow">Un projet en tête&nbsp;?</p>
+        <p class="eyebrow">Un projet en tête ou une opportunité&nbsp;?</p>
         <h2>Me Contacter</h2>
         <form
           action="https://formspree.io/f/xldgbqjp"
