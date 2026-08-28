@@ -8,6 +8,14 @@
       name="description"
       content="Portfolio de Killian Dumoulin, développeur web. Compétences, projets, expériences et formation."
     />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <link
+      rel="preload"
+      as="image"
+      href="img/jillian%20up.png"
+      fetchpriority="high"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="apple-touch-icon"
@@ -28,17 +36,25 @@
     />
   </head>
   <body>
+    <a href="#hero" class="skip-link">Aller au contenu</a>
     <!-- Header fixe -->
     <header id="header">
       <nav>
         <a href="#hero" class="logo"
-          ><img src="img/logo.png" alt="Killian Dumoulin" height="50"
+          ><img src="img/logo.png" alt="Killian Dumoulin" width="50" height="50"
         /></a>
-        <div class="hamburger" id="hamburger" aria-label="Menu">
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
         <ul id="navMenu">
           <li><a href="#hero">Accueil</a></li>
           <li><a href="#competences">Compétences</a></li>
@@ -117,7 +133,14 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="img/jillian%20up.png" alt="Killian Dumoulin" />
+          <img
+            src="img/jillian%20up.png"
+            alt="Killian Dumoulin"
+            width="1024"
+            height="1536"
+            fetchpriority="high"
+            decoding="async"
+          />
         </div>
         <a href="#competences" class="hero-scroll" aria-label="Descendre">
           <span></span>
@@ -208,7 +231,7 @@
         <div class="projets-grid">
           <!-- Projet : Sniper Game -->
           <article class="project-card" data-project="4">
-            <div class="project-image"><img src="img/sniperGame.png" alt="Sniper Game" /></div>
+            <div class="project-image"><img src="img/sniperGame.png" alt="Sniper Game" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>Sniper Game</h3>
               <div class="project-stack">
@@ -221,7 +244,7 @@
 
           <!-- Projet : Note de Frais -->
           <article class="project-card" data-project="8">
-            <div class="project-image"><img src="img/note-de-frais.png" alt="Note de Frais" /></div>
+            <div class="project-image"><img src="img/note-de-frais.png" alt="Note de Frais" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>Note de Frais</h3>
               <div class="project-stack">
@@ -238,7 +261,7 @@
 
           <!-- Projet : Invoice Generator -->
           <article class="project-card" data-project="9">
-            <div class="project-image"><img src="img/invoice-generator.png" alt="Invoice Generator" /></div>
+            <div class="project-image"><img src="img/invoice-generator.png" alt="Invoice Generator" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>Invoice Generator</h3>
               <div class="project-stack">
@@ -254,7 +277,7 @@
 
           <!-- Projet : Météo France -->
           <article class="project-card" data-project="6">
-            <div class="project-image"><img src="img/meteo.png" alt="Météo France" /></div>
+            <div class="project-image"><img src="img/meteo.png" alt="Météo France" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>Météo France</h3>
               <div class="project-stack">
@@ -267,7 +290,7 @@
 
           <!-- Projet : Darkheim -->
           <article class="project-card" data-project="7">
-            <div class="project-image"><img src="img/darkheim.png" alt="Darkheim" /></div>
+            <div class="project-image"><img src="img/darkheim.png" alt="Darkheim" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>Darkheim</h3>
               <div class="project-stack">
@@ -278,7 +301,7 @@
 
           <!-- Projet : Chronoquest -->
           <article class="project-card" data-project="1">
-            <div class="project-image"><img src="img/chronoquest.png" alt="Chronoquest" /></div>
+            <div class="project-image"><img src="img/chronoquest.png" alt="Chronoquest" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>Chronoquest</h3>
               <div class="project-stack">
@@ -291,7 +314,7 @@
 
           <!-- Projet : JetGun -->
           <article class="project-card" data-project="2">
-            <div class="project-image"><img src="img/melon.png" alt="JetGun" /></div>
+            <div class="project-image"><img src="img/melon.png" alt="JetGun" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>JetGun</h3>
               <div class="project-stack">
@@ -303,7 +326,7 @@
 
           <!-- Projet : Jeu Quizz FDD -->
           <article class="project-card" data-project="3">
-            <div class="project-image"><img src="img/quizz.png" alt="Jeu Quizz FDD" /></div>
+            <div class="project-image"><img src="img/quizz.png" alt="Jeu Quizz FDD" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>Jeu Quizz FDD</h3>
               <div class="project-stack">
@@ -316,7 +339,7 @@
 
           <!-- Projet : Memory Game -->
           <article class="project-card" data-project="5">
-            <div class="project-image"><img src="img/memory.png" alt="Memory Game" /></div>
+            <div class="project-image"><img src="img/memory.png" alt="Memory Game" loading="lazy" decoding="async" /></div>
             <div class="project-info">
               <h3>Memory Game</h3>
               <div class="project-stack">
@@ -509,7 +532,7 @@
           <article class="edu-item">
             <div class="edu-period">Sep. 2024 – Aujourd'hui</div>
             <div class="edu-card">
-              <div class="edu-logo"><img src="img/LOGO_MDS.png" alt="MyDigitalSchool" /></div>
+              <div class="edu-logo"><img src="img/LOGO_MDS.png" alt="MyDigitalSchool" loading="lazy" decoding="async" /></div>
               <div class="edu-content">
                 <h3>Concepteur développeur d'applications — Cycle Web &amp; Média</h3>
                 <p class="edu-school">MyDigitalSchool — Lyon</p>
@@ -585,7 +608,7 @@
         <h2>À propos</h2>
         <div class="apropos-content">
           <div class="apropos-photo">
-            <img src="img/jillian.png" alt="Killian Dumoulin" />
+            <img src="img/jillian.png" alt="Killian Dumoulin" width="250" height="250" loading="lazy" decoding="async" />
           </div>
           <div class="apropos-text">
             <h3>
@@ -620,18 +643,34 @@
         >
           <div class="form-group">
             <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" required />
-            <span class="error" id="nameError">Veuillez entrer votre nom</span>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              placeholder="Votre nom…"
+              required
+            />
+            <span class="error" id="nameError" aria-live="polite">Veuillez entrer votre nom</span>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-            <span class="error" id="emailError">Veuillez entrer un email valide</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              inputmode="email"
+              spellcheck="false"
+              placeholder="vous@exemple.com"
+              required
+            />
+            <span class="error" id="emailError" aria-live="polite">Veuillez entrer un email valide</span>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <span class="error" id="messageError">Veuillez entrer un message</span>
+            <textarea id="message" name="message" placeholder="Votre message…" required></textarea>
+            <span class="error" id="messageError" aria-live="polite">Veuillez entrer un message</span>
           </div>
           <button type="submit" class="submit-btn">Envoyer</button>
         </form>

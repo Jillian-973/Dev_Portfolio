@@ -115,15 +115,28 @@ window.addEventListener("scroll", () => {
 // Menu hamburger
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
+
+function setMenu(open) {
+  navMenu.classList.toggle("active", open);
+  hamburger.setAttribute("aria-expanded", String(open));
+  hamburger.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+}
+
 hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
+  setMenu(!navMenu.classList.contains("active"));
 });
 
 // Fermer le menu au clic sur un lien
 document.querySelectorAll("nav a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("active");
-  });
+  link.addEventListener("click", () => setMenu(false));
+});
+
+// Fermer le menu avec la touche Échap
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && navMenu.classList.contains("active")) {
+    setMenu(false);
+    hamburger.focus();
+  }
 });
 
 // Animation de révélation au scroll
@@ -153,18 +166,24 @@ function openProjectPopup(projectId) {
   const project = projectsData[projectId];
   if (!project) return;
 
+  const previouslyFocused = document.activeElement;
+
   const overlay = document.createElement("div");
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-modal", "true");
+  overlay.setAttribute("aria-label", project.title);
   overlay.style.cssText = `
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(0, 0, 0, 0.7); display: flex; justify-content: center;
     align-items: center; z-index: 9999; padding: 20px; animation: fadeIn 0.3s;
+    overscroll-behavior: contain;
   `;
 
   const popup = document.createElement("div");
   popup.style.cssText = `
     background: white; border-radius: 16px; max-width: 600px; width: 100%;
     max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-    position: relative; animation: slideUp 0.3s;
+    position: relative; animation: slideUp 0.3s; overscroll-behavior: contain;
   `;
 
   const closeBtn = document.createElement("button");
@@ -174,7 +193,8 @@ function openProjectPopup(projectId) {
     position: absolute; top: 20px; right: 20px; background: white; border: none;
     width: 40px; height: 40px; border-radius: 50%; font-size: 28px; cursor: pointer;
     color: #333; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 10; display: flex;
-    align-items: center; justify-content: center; transition: all 0.3s;
+    align-items: center; justify-content: center;
+    transition: transform 0.3s ease, background 0.3s ease;
   `;
   closeBtn.onmouseover = () => {
     closeBtn.style.transform = "rotate(90deg)";
@@ -234,7 +254,7 @@ function openProjectPopup(projectId) {
   linkEl.style.cssText = `
     display: inline-block; background: linear-gradient(135deg, #ff6b35 60%, #333 100%);
     color: white; padding: 14px 32px; text-decoration: none; border-radius: 8px;
-    font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 15px rgba(255,107,53,0.4);
+    font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(255,107,53,0.4);
   `;
   linkEl.onmouseover = () => {
     linkEl.style.transform = "translateY(-2px)";
@@ -269,23 +289,48 @@ function openProjectPopup(projectId) {
     document.head.appendChild(style);
   }
 
+  const onKeydown = (e) => {
+    if (e.key === "Escape") closePopup();
+  };
+
   const closePopup = () => {
+    document.removeEventListener("keydown", onKeydown);
     overlay.style.animation = "fadeOut 0.3s";
     setTimeout(() => overlay.remove(), 300);
+    // Rendre le focus à l'élément qui a ouvert la modale
+    if (previouslyFocused && typeof previouslyFocused.focus === "function") {
+      previouslyFocused.focus();
+    }
   };
   closeBtn.onclick = closePopup;
   overlay.onclick = (e) => {
     if (e.target === overlay) closePopup();
   };
+  document.addEventListener("keydown", onKeydown);
 
   document.body.appendChild(overlay);
+  // Déplacer le focus dans la modale
+  closeBtn.focus();
 }
 
-// Initialiser les événements sur les cartes de projet
+// Initialiser les événements sur les cartes de projet (souris + clavier)
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".project-card").forEach((card) => {
-    card.addEventListener("click", () => {
-      openProjectPopup(card.getAttribute("data-project"));
+    const id = card.getAttribute("data-project");
+    const title = card.querySelector("h3");
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+    card.setAttribute(
+      "aria-label",
+      "Voir le projet " + (title ? title.textContent.trim() : "")
+    );
+    const open = () => openProjectPopup(id);
+    card.addEventListener("click", open);
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        open();
+      }
     });
   });
 });
