@@ -19,6 +19,8 @@ const STACKS = {
   cplusplus: ["img/logos/cplusplus.svg", "C++"],
   godot: ["img/logos/godot.svg", "Godot"],
   git: ["img/logos/git.svg", "Git"],
+  github: ["img/logos/github.svg", "GitHub"],
+  figma: ["img/logos/figma.svg", "Figma"],
   puppeteer: ["img/logos/puppeteer.svg", "Puppeteer"],
   postgresql: ["img/logos/postgresql.svg", "PostgreSQL"],
   neon: ["img/logos/neon.svg", "Neon"],
@@ -34,7 +36,7 @@ const projectsData = {
     description:
       "Projet de partiel : conception d'un site web en HTML, CSS et JavaScript sur un sujet donné (toutes les infos sont présentes sur le site). C'est le premier site \"complet\" que j'ai pu réaliser, j'ai pu m'entrainer à faire du responsive et à faire des animations en CSS et JavaScript, ainsi qu'un carrousel.",
     link: "https://jillian-973.github.io/Chrono_quest/",
-    stack: ["html5", "css3", "javascript"],
+    stack: ["html5", "css3", "javascript", "github"],
   },
   2: {
     image: "img/melon.png",
@@ -42,7 +44,7 @@ const projectsData = {
     description:
       "Jeu en 2.5D que j'ai pu coder en tant que dev en équipe de game developpeur et game designer, c'est le premier jeu complet que j'ai pu réaliser en situation professionnelle simulée. J'ai pu m'entrainer à coder en C# dans le moteur de jeu Unity, à faire du versionning avec git et à travailler en équipe.",
     link: "https://jillian-973.github.io/JetGun/",
-    stack: ["csharp", "unity"],
+    stack: ["csharp", "unity", "github"],
   },
   3: {
     image: "img/quizz.png",
@@ -50,7 +52,7 @@ const projectsData = {
     description:
       "Jeu quizz sur des fruits du démon de l'anime One Piece réalisé en cours afin de s'entrainer au JavaScript. Le défi était de faire un quizz sur une one page avec plusieurs affichages qui apparaissent au fur et à mesure que le quizz avance.",
     link: "https://jillian-973.github.io/Quizz_FDD/",
-    stack: ["html5", "css3", "javascript"],
+    stack: ["html5", "css3", "javascript", "github"],
   },
   4: {
     image: "img/sniperGame.png",
@@ -58,7 +60,7 @@ const projectsData = {
     description:
       "Jeu de tir en 2D réalisé en cours avec JavaScript, HTML et CSS. J'ai pu m'entrainer à créer des animations et des interactions dynamiques. C'est une one page avec un start, game et game over qui s'affichent au fur et à mesure que le jeu avance ; j'ai aussi ajouté un système de score et de timer pour rendre le jeu plus intéressant.",
     link: "https://jillian-973.github.io/sniper_game/",
-    stack: ["html5", "css3", "javascript"],
+    stack: ["html5", "css3", "javascript", "github"],
   },
   5: {
     image: "img/memory.png",
@@ -66,7 +68,7 @@ const projectsData = {
     description:
       "Jeu de mémoire réalisé en cours avec PHP. Memory Game est un jeu de plateau web classique où les joueurs doivent mémoriser et retrouver des paires de cartes identiques. Chaque session est entièrement gérée en PHP avec les sessions natives du serveur.",
     link: "https://github.com/Jillian-973/memory-game",
-    stack: ["php"],
+    stack: ["php", "github"],
   },
   6: {
     image: "img/meteo.png",
@@ -74,7 +76,7 @@ const projectsData = {
     description:
       "Site météorologique utilisant une API pour récupérer les données météo en fonction de la ville entrée par l'utilisateur, afin de s'entrainer au JavaScript et à l'utilisation d'API.",
     link: "https://jillian-973.github.io/Meteo_France/",
-    stack: ["html5", "css3", "javascript"],
+    stack: ["html5", "css3", "javascript", "github"],
   },
   7: {
     image: "img/darkheim.png",
@@ -82,7 +84,7 @@ const projectsData = {
     description:
       "Jeu Rogue Like en 2D réalisé lors d'un concours \"Game Jam\" avec Godot. J'ai pu coder le personnage principal et les ennemis du jeu avec des mécaniques de déplacement, d'attaque et de détection. La map est générée de manière procédurale pour rendre chaque partie unique. Un projet réalisé en équipe avec d'autres game designers, l'occasion de m'entrainer à coder en GDScript dans le moteur Godot et à travailler en équipe.",
     link: "https://jillixn.itch.io/darkheim",
-    stack: ["godot"],
+    stack: ["godot", "github"],
   },
   8: {
     image: "img/note-de-frais.png",
@@ -90,7 +92,7 @@ const projectsData = {
     description:
       "Application de gestion de notes de frais réalisée en cours avec Node.js, Express et MongoDB. J'ai pu m'entrainer à créer une application full-stack avec une base de données NoSQL et à gérer les routes et les requêtes HTTP, tout en utilisant un nouvel outil : Puppeteer.",
     link: "https://github.com/Jillian-973/Note-de-frais-",
-    stack: ["html5", "css3", "ejs", "nodejs", "express", "puppeteer", "mongodb"],
+    stack: ["html5", "css3", "ejs", "nodejs", "express", "puppeteer", "mongodb", "github"],
   },
   9: {
     image: "img/invoice-generator.png",
@@ -98,7 +100,7 @@ const projectsData = {
     description:
       "Application de génération de factures réalisée lors d'un projet personnel avec Node.js, Express et Puppeteer. C'était la première fois que je touchais vraiment au back-end et j'ai beaucoup appris sur la gestion de serveur et la génération de PDF avec Puppeteer. Un projet réalisé pour générer les factures de mon activité de freelance.",
     link: "#",
-    stack: ["html5", "css3", "ejs", "nodejs", "express", "puppeteer"],
+    stack: ["html5", "css3", "ejs", "nodejs", "express", "puppeteer", "github"],
   },
 };
 
