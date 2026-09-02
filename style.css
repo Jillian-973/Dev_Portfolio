@@ -871,7 +871,7 @@ section h2::after {
 .apropos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 23px;
   margin-top: 60px;
 }
 
