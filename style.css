@@ -835,7 +835,7 @@ section h2::after {
 .apropos-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
 }
 
 .apropos-photo {
@@ -866,6 +866,32 @@ section h2::after {
   line-height: 1.8;
   color: var(--dark-gray);
   margin-bottom: 15px;
+}
+
+.apropos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.apropos-card {
+  background: var(--gray);
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 28px 30px;
+}
+
+.apropos-card h3 {
+  font-size: 1.3rem;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.apropos-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
 }
 
 /* ===== Contact ===== */
@@ -1099,6 +1125,7 @@ footer {
   .apropos-content {
     flex-direction: column;
     text-align: center;
+    gap: 40px;
   }
 
   .exp-card {
@@ -1121,6 +1148,10 @@ footer {
 @media (max-width: 600px) {
   :root {
     --content-width: 92%;
+  }
+
+  .apropos-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-name {
