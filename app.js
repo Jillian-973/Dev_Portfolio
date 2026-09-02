@@ -29,6 +29,10 @@ const STACKS = {
   vue: ["img/logos/vue.svg", "Vue.js"],
   react: ["img/logos/react.svg", "React"],
   symfony: ["img/logos/symfony.svg", "Symfony"],
+  typescript: ["img/logos/typescript.svg", "TypeScript"],
+  vercel: ["img/logos/vercel.svg", "Vercel"],
+  calendly: ["img/logos/calendly.svg", "Calendly"],
+  nuxtui: ["img/logos/nuxtui.svg", "Nuxt UI"],
 };
 
 // Données des projets
@@ -114,6 +118,16 @@ const projectsData = {
       "Première expérience avec Vue.js et création d'un chatbot.",
     link: "https://mesotes.fr/",
     stack: ["vue", "tailwindcss", "javascript", "github"],
+  },
+  11: {
+    image: "img/etabli.png",
+    title: "L'Établi",
+    description:
+      "Site fictif pour un atelier de réparation de vélo et des ateliers participatifs de réparation, avec un système de réservation intégré via Calendly.",
+    challenge:
+      "Connecter et exploiter l'API Calendly, avec une première expérience en TypeScript et Nuxt.",
+    link: "#",
+    stack: ["nuxt", "vue", "typescript", "vercel", "tailwindcss", "nuxtui", "calendly", "github"],
   },
 };
 
