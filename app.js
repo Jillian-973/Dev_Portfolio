@@ -126,7 +126,7 @@ const projectsData = {
       "Site fictif pour un atelier de réparation de vélo et des ateliers participatifs de réparation, avec un système de réservation intégré via Calendly.",
     challenge:
       "Connecter et exploiter l'API Calendly, avec une première expérience en TypeScript et Nuxt.",
-    link: "#",
+    link: "https://l-etabli-nu.vercel.app/",
     stack: ["nuxt", "vue", "typescript", "vercel", "tailwindcss", "nuxtui", "calendly", "github"],
   },
 };
