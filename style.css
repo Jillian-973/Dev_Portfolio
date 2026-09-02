@@ -73,6 +73,26 @@ nav {
 .logo {
   display: inline-flex;
   align-items: center;
+  position: relative;
+}
+
+.logo img {
+  transition: opacity 0.3s ease;
+}
+
+.logo .logo-white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+header.scrolled .logo .logo-default {
+  opacity: 0;
+}
+
+header.scrolled .logo .logo-white {
+  opacity: 1;
 }
 
 nav ul {
