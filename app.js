@@ -26,6 +26,9 @@ const STACKS = {
   neon: ["img/logos/neon.svg", "Neon"],
   nuxt: ["img/logos/nuxt.svg", "Nuxt"],
   tailwindcss: ["img/logos/tailwindcss.svg", "Tailwind CSS"],
+  vue: ["img/logos/vue.svg", "Vue.js"],
+  react: ["img/logos/react.svg", "React"],
+  symfony: ["img/logos/symfony.svg", "Symfony"],
 };
 
 // Données des projets
@@ -101,6 +104,16 @@ const projectsData = {
       "Application de génération de factures réalisée lors d'un projet personnel avec Node.js, Express et Puppeteer. C'était la première fois que je touchais vraiment au back-end et j'ai beaucoup appris sur la gestion de serveur et la génération de PDF avec Puppeteer. Un projet réalisé pour générer les factures de mon activité de freelance.",
     link: "#",
     stack: ["html5", "css3", "ejs", "nodejs", "express", "puppeteer", "github"],
+  },
+  10: {
+    image: "img/mesotes.png",
+    title: "Mésotès",
+    description:
+      "Site de centralisation des activités destinées à aider des apprenants à valider leur certification RS6891. Réalisé lors d'un stage pour un formateur en IA, avec Vue.js et Tailwind CSS.",
+    challenge:
+      "Première expérience avec Vue.js et création d'un chatbot.",
+    link: "https://mesotes.fr/",
+    stack: ["vue", "tailwindcss", "javascript", "github"],
   },
 };
 
@@ -270,6 +283,33 @@ function openProjectPopup(projectId) {
   content.appendChild(titleEl);
   content.appendChild(stackContainer);
   content.appendChild(descEl);
+
+  // Panneau "Le défi" du projet (style avertissement)
+  if (project.challenge) {
+    const challengeBox = document.createElement("div");
+    challengeBox.style.cssText = `
+      display: flex; align-items: flex-start; gap: 14px;
+      background: #fff7ed; border: 1px solid #fed7aa; border-left: 4px solid #ff6b35;
+      border-radius: 12px; padding: 16px 18px; margin: 0 0 25px 0;
+    `;
+    const icon = document.createElement("span");
+    icon.setAttribute("aria-hidden", "true");
+    icon.style.cssText = `flex-shrink: 0; line-height: 0; margin-top: 1px;`;
+    icon.innerHTML = `<svg viewBox="0 0 24 24" width="24" height="24" fill="#ff6b35"><path d="M12 2 1 21h22L12 2zm0 6a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V9a1 1 0 0 1 1-1zm0 9.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>`;
+    const textWrap = document.createElement("div");
+    const challengeTitle = document.createElement("p");
+    challengeTitle.textContent = "Le défi";
+    challengeTitle.style.cssText = `margin: 0 0 4px 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #ff6b35;`;
+    const challengeText = document.createElement("p");
+    challengeText.textContent = project.challenge;
+    challengeText.style.cssText = `margin: 0; font-size: 15px; line-height: 1.6; color: #7c4a1e;`;
+    textWrap.appendChild(challengeTitle);
+    textWrap.appendChild(challengeText);
+    challengeBox.appendChild(icon);
+    challengeBox.appendChild(textWrap);
+    content.appendChild(challengeBox);
+  }
+
   content.appendChild(linkEl);
 
   popup.appendChild(closeBtn);
