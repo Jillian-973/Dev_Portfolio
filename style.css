@@ -282,6 +282,37 @@ nav a:hover {
   }
 }
 
+/* ===== Sphère « basse » 3D (three.js) ===== */
+.bass-canvas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: min(70vmin, 560px);
+  height: min(70vmin, 560px);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.bass-canvas canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* Le contenu des sections reste au-dessus de la sphère de fond */
+.contact, .stage > section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Contact & footer (après le décor) au-dessus de la sphère fixe */
+footer {
+  position: relative;
+  z-index: 2;
+}
+
 /* ===== Section Hero ===== */
 .hero {
   min-height: 100vh;

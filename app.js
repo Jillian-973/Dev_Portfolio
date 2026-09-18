@@ -392,3 +392,112 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// ===== Sphère « basse » 3D (three.js) : rotation au scroll + vibration =====
+(function () {
+  const mount = document.querySelector(".bass-canvas");
+  if (!mount || typeof THREE === "undefined") return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const scene = new THREE.Scene();
+
+  const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+  camera.position.z = 5;
+
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  mount.appendChild(renderer.domElement);
+
+  // La boule : icosaèdre facetté (rendu 3D éclairé)
+  const RADIUS = 1.5;
+  const geometry = new THREE.IcosahedronGeometry(RADIUS, 3);
+  const material = new THREE.MeshStandardMaterial({
+    color: 0xff6b35,
+    roughness: 0.35,
+    metalness: 0.45,
+    flatShading: true,
+  });
+  const orb = new THREE.Mesh(geometry, material);
+  scene.add(orb);
+
+  // Fil de fer par-dessus pour renforcer la lecture 3D
+  const wire = new THREE.Mesh(
+    geometry,
+    new THREE.MeshBasicMaterial({
+      color: 0xffd9c4,
+      wireframe: true,
+      transparent: true,
+      opacity: 0.15,
+    })
+  );
+  wire.scale.setScalar(1.02);
+  orb.add(wire);
+
+  // Lumières
+  const key = new THREE.DirectionalLight(0xffffff, 1.7);
+  key.position.set(3, 4, 5);
+  scene.add(key);
+  const rim = new THREE.DirectionalLight(0xff8c5a, 1.1);
+  rim.position.set(-5, -2, -3);
+  scene.add(rim);
+  scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+
+  // Positions d'origine des sommets (pour la vibration)
+  const posAttr = geometry.attributes.position;
+  const basePos = Float32Array.from(posAttr.array);
+
+  function resize() {
+    const w = mount.clientWidth || 1;
+    const h = mount.clientHeight || 1;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  window.addEventListener("resize", resize);
+  resize();
+
+  let scrollY = window.scrollY || window.pageYOffset || 0;
+  window.addEventListener(
+    "scroll",
+    function () {
+      scrollY = window.scrollY || window.pageYOffset || 0;
+    },
+    { passive: true }
+  );
+
+  const clock = new THREE.Clock();
+
+  function animate() {
+    requestAnimationFrame(animate);
+    const t = clock.getElapsedTime();
+
+    // Rotation : pilotée par le scroll + légère dérive continue
+    orb.rotation.y = scrollY * 0.004 + (reduce ? 0 : t * 0.15);
+    orb.rotation.x = scrollY * 0.002;
+
+    // « Basse » : impulsion sèche périodique (pics marqués)
+    const pulse = reduce ? 0 : Math.pow((Math.sin(t * 3.1) + 1) / 2, 8);
+
+    // Vibration : déplacement radial des sommets, modulé sur le beat.
+    // Le wobble dépend de la POSITION (pas de l'index) -> facettes solidaires.
+    const amp = pulse * 0.16;
+    for (let i = 0; i < posAttr.count; i++) {
+      const ix = i * 3;
+      const bx = basePos[ix];
+      const by = basePos[ix + 1];
+      const bz = basePos[ix + 2];
+      const wobble = 0.5 + 0.5 * Math.sin(t * 9 + bx * 2.1 + by * 3.3 + bz * 1.7);
+      const factor = 1 + (amp * wobble) / RADIUS;
+      posAttr.array[ix] = bx * factor;
+      posAttr.array[ix + 1] = by * factor;
+      posAttr.array[ix + 2] = bz * factor;
+    }
+    posAttr.needsUpdate = true;
+
+    // Petit « thump » d'échelle en plus
+    orb.scale.setScalar(1 + pulse * 0.06);
+
+    renderer.render(scene, camera);
+  }
+  animate();
+})();
