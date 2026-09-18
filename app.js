@@ -421,7 +421,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scene.add(orb);
 
   // Fil de fer par-dessus pour renforcer la lecture 3D
-  const wire = new THREE.Mesh(
+  /*const wire = new THREE.Mesh(
     geometry,
     new THREE.MeshBasicMaterial({
       color: 0xffd9c4,
@@ -431,7 +431,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
   wire.scale.setScalar(1.02);
-  orb.add(wire);
+  orb.add(wire);*/
 
   // Lumières
   const key = new THREE.DirectionalLight(0xffffff, 1.7);
