@@ -33,6 +33,8 @@ const STACKS = {
   vercel: ["img/logos/vercel.svg", "Vercel"],
   calendly: ["img/logos/calendly.svg", "Calendly"],
   nuxtui: ["img/logos/nuxtui.svg", "Nuxt UI"],
+  threejs: ["img/logos/threejs.svg", "Three.js"],
+  animejs: ["img/logos/animejs.svg", "Anime.js"],
 };
 
 // Données des projets
